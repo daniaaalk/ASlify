@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ASL Detector</title>
+  <script defer src="{{ url_for('static', filename='script.js') }}"></script>
+  <style>
+    video, canvas {
+      border: 2px solid #000;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>ASL Alphabet Detector</h1>
+  <video id="webcam" width="224" height="224" autoplay></video>
+  <canvas id="canvas" width="224" height="224" hidden></canvas>
+  <p>Prediction: <span id="output">Waiting...</span></p>
+</body>
+</html>
